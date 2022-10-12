@@ -1,5 +1,5 @@
 #Cài đặt phiên bản java mà mình muốn chạy cho application của mình
-FROM openjdk:11-slim as build
+FROM openjdk:8-slim as build
 
 #Tên của cái wrapper chứa Image
 MAINTAINER eazybytes.com
