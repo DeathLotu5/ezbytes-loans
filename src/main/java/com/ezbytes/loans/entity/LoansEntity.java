@@ -11,7 +11,6 @@ import java.util.Date;
 @Table(name = "loans")
 @Getter
 @Setter
-@ToString
 public class LoansEntity {
 
     @Id
