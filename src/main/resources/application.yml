@@ -18,7 +18,6 @@ spring:
   h2:
     console:
       enabled: true
-
 server:
   port: 8090
 
@@ -26,4 +25,25 @@ management:
   endpoints:
     web:
       exposure:
-        include: *
+        include: "*"
+  info:
+    env:
+      enabled: true
+  endpoint:
+    shutdown:
+      enabled: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
+
+info:
+  app:
+    name: Loans Microservice
+    description: Eazy Bank Loans Application
+    version: 1.0.0

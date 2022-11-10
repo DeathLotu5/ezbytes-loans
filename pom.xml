@@ -53,6 +53,18 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+		<!--		Sẽ giúp cho microservice của mình hoạt động như 1 client đến eureka server -->
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+		<!--		Cái này sẽ phát hành cần bằng tải từ phía client -->
 	</dependencies>
 
 	<dependencyManagement>
