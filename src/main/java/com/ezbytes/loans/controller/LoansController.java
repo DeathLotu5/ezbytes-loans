@@ -27,6 +27,7 @@ public class LoansController {
 
     @PostMapping("/myLoans")
     public List<LoansEntity> getLoansDetails(@RequestBody CustomerEntity customer) {
+        System.out.println("Call to Loans service");
         List<LoansEntity> loans = loansRepository.findByCustomerIdOrderByStartDtDesc(customer.getCustomerId());
         if (loans != null) {
             return loans;
